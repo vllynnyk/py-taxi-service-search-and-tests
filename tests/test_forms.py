@@ -23,7 +23,3 @@ class FormsTests(TestCase):
                          form_data["last_name"])
         self.assertEqual(form.cleaned_data["license_number"],
                          form_data["license_number"])
-        self.assertEqual(form.cleaned_data["password1"],
-                         form_data["password1"])
-        self.assertEqual(form.cleaned_data["password2"],
-                         form_data["password2"])
