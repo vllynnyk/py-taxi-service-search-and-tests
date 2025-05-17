@@ -6,6 +6,7 @@ from taxi.models import Driver
 
 DRIVER_URL = reverse("taxi:driver-list")
 
+
 class PublicCarTest(TestCase):
     @classmethod
     def setUpTestData(cls):

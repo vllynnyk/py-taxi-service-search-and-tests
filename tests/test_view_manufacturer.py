@@ -8,6 +8,7 @@ MANUFACTURER_URL = reverse("taxi:manufacturer-list")
 CAR_URL = reverse("taxi:car-list")
 DRIVER_URL = reverse("taxi:driver-list")
 
+
 class PublicManufacturerTest(TestCase):
 
     @classmethod
