@@ -3,7 +3,7 @@ from django.test import TestCase, Client
 from django.urls import reverse
 
 
-class AdminSeitTest(TestCase):
+class AdminSiteTest(TestCase):
     def setUp(self):
         self.client = Client()
         self.user = get_user_model().objects.create_superuser(

@@ -6,7 +6,7 @@ from taxi.models import Manufacturer, Car
 
 class ModelTest(TestCase):
     def test_manufacturer_str(self):
-        manufacturer = Manufacturer(name="test")
+        manufacturer = Manufacturer(name="test", country="US")
         self.assertEqual(str(manufacturer),
                          f"{manufacturer.name}"
                          f" {manufacturer.country}")
@@ -25,7 +25,8 @@ class ModelTest(TestCase):
                          f" {driver.last_name})")
 
     def test_car_str(self):
-        car = Car(model="test")
+        manufacturer = Manufacturer(name="test", country="US")
+        car = Car(model="test", manufacturer=manufacturer)
         self.assertEqual(str(car), car.model)
 
     def test_create_driver_with_license(self):
